@@ -13,7 +13,10 @@ import {
   ConnectLogo, 
   WebsiteRights, 
   ConnectIcons, 
-  ConnectIconLink
+  ConnectIconLink,
+  Logo,
+  LogoFirst, 
+  LogoLast
 } from './FooterElements'
 
 const Footer = () => {
@@ -34,12 +37,11 @@ const Footer = () => {
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>Send me a message</FooterLinkTitle>
-              <FooterLink>Skills</FooterLink>
+              <FooterLinkTitle>Send a Message</FooterLinkTitle>
               <FooterLink>Contact</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>Connect with me</FooterLinkTitle>
+              <FooterLinkTitle>Connect</FooterLinkTitle>
               <FooterLink>Github</FooterLink>
               <FooterLink>LinkedIn</FooterLink>
             </FooterLinkItems>
@@ -48,14 +50,17 @@ const Footer = () => {
         <Connect>
           <ConnectWrap>
             <ConnectLogo to='/'>
-              Blake Romero
+              <Logo>
+                <LogoFirst>Blake</LogoFirst>
+                <LogoLast>Romero</LogoLast>
+              </Logo>
             </ConnectLogo>
             <WebsiteRights>Blake Romero &copy; {new Date().getFullYear()} All Rights Reserved.</WebsiteRights>
             <ConnectIcons>
               <ConnectIconLink href="/" target="_blank" aria-label="GitHub">
                 <FaGithub />
               </ConnectIconLink>
-              <ConnectIconLink href="/" target="_blank" aria-label="Linkedin">
+              <ConnectIconLink href="//https://www.linkedin.com/in/blakeromero/" target="_blank" aria-label="Linkedin">
                 <FaLinkedin />
               </ConnectIconLink>
             </ConnectIcons>

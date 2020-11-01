@@ -5,7 +5,7 @@ import { Link as LinkScroll } from 'react-scroll';
 
 
 export const Nav = styled.nav`
-  background: #141414;
+  background: ${({scrollNav}) => (scrollNav ? '#141414' : 'transparent')};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -86,4 +86,22 @@ export const NavLinks = styled(LinkScroll)`
   &.active {
     border-bottom: 3px solid #ED4933;
   }
+`;
+
+export const Logo = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+`;
+
+export const LogoFirst = styled.h1`
+  font-size: 30px;
+  text-transform: uppercase;
+`;
+
+export const LogoLast = styled.h3`
+  font-size: 22px;
+  text-transform: uppercase;
 `;

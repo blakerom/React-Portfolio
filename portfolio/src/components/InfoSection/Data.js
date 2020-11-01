@@ -36,20 +36,3 @@ export const homeObjTwo = {
   primary: true,
   darkText: true
 };
-
-export const homeObjThree = {
-  id: 'about',
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
-  topLine: 'Premium',
-  headLine: 'Project one headline',
-  description: 'Project one description goes here',
-  buttonLabel: 'Check it out',
-  imgStart: false,
-  img: image3,
-  alt: 'Project 3',
-  dark: true,
-  primary: true,
-  darkText: true
-};
