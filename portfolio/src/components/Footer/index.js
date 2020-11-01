@@ -1,5 +1,6 @@
 import React from 'react'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
+import { animateScroll as scroll } from 'react-scroll'
 import {
   FooterContainer, 
   FooterWrap, 
@@ -18,6 +19,10 @@ import {
   LogoFirst, 
   LogoLast
 } from './FooterElements'
+
+const toggleHome = () => {
+  scroll.scrollToTop();
+}
 
 const Footer = () => {
   return (
@@ -38,7 +43,7 @@ const Footer = () => {
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>Send a Message</FooterLinkTitle>
-              <FooterLink>Contact</FooterLink>
+              <FooterLink to="contact">Contact</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Connect</FooterLinkTitle>
@@ -49,7 +54,7 @@ const Footer = () => {
         </FooterLinksContainer>
         <Connect>
           <ConnectWrap>
-            <ConnectLogo to='/'>
+            <ConnectLogo to='/' onClick={toggleHome}>
               <Logo>
                 <LogoFirst>Blake</LogoFirst>
                 <LogoLast>Romero</LogoLast>
@@ -60,7 +65,7 @@ const Footer = () => {
               <ConnectIconLink href="/" target="_blank" aria-label="GitHub">
                 <FaGithub />
               </ConnectIconLink>
-              <ConnectIconLink href="//https://www.linkedin.com/in/blakeromero/" target="_blank" aria-label="Linkedin">
+              <ConnectIconLink href="//linkedin.com/in/blakeromero/" target="_blank" aria-label="Linkedin">
                 <FaLinkedin />
               </ConnectIconLink>
             </ConnectIcons>

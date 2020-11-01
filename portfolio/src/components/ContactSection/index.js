@@ -18,7 +18,7 @@ const ContactSection = () => {
   };
 
   return (
-    <ContactContainer id="home">
+    <ContactContainer id="contact">
       <ContactBg>
         <ImageBg src={Image} alt={'PNW'}/>
       </ContactBg>
