@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import image from '../../images/pnw.jpg'
 
 export const Container = styled.div`
 min-height: 692px;
@@ -11,13 +12,14 @@ left: 0;
 z-index: 0;
 overflow: hidden;
 background: linear-gradient(
-  108deg,
-  rgba(237,73,51,1) 0%,
-  rgba(244,238,237,1) 100%
-);
+      180deg,
+      rgba(0,0,0,0.2) 0%,
+      rgba(0,0,0,0.6) 100%
+    ),
+    linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
 `;
 
-export const FormWarp = styled.div`
+export const FormWrap = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -54,7 +56,7 @@ export const FormContent = styled.div`
 `;
 
 export const Form = styled.div`
-  background: red;
+  background: #141414;
   max-width: 400px;
   height: auto;
   width: 100%;
@@ -106,4 +108,23 @@ export const Text = styled.span`
   margin-top: 24px;
   color: #F4EEED;
   font-size: 14px;
+`;
+
+export const ContactPageBg = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+`;
+
+export const ImageBg = styled.img`
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: #141414;
 `;
