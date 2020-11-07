@@ -98,4 +98,7 @@ export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+  -moz-box-shadow: 0 0 5px 1px #141414;
+  -webkit-box-shadow: 0 0 5px 1px #141414;
+  box-shadow: 0 0 5px 1px #141414;
 `;

@@ -1,6 +1,5 @@
-import image1 from '../../images/devpendency.jpg';
+import image1 from '../../images/me.jpg';
 import image2 from '../../images/roadtrip.PNG';
-import image3 from '../../images/mail.svg';
 
 
 export const homeObjOne = {
@@ -8,15 +7,12 @@ export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'Premium',
+  topLine: 'About Me',
   headLine: 'Project one headline',
   description: 'Project one description goes here',
-  buttonLabel: 'Check it out',
   imgStart: false,
   img: image1,
   alt: 'Project 1',
-  dark: true,
-  primary: true,
   darkText: true
 };
 
@@ -25,14 +21,11 @@ export const homeObjTwo = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'Premium',
+  topLine: 'Skills',
   headLine: 'Project one headline',
   description: 'Project one description goes here',
-  buttonLabel: 'Check it out',
   imgStart: true,
   img: image2,
   alt: 'Project 2',
-  dark: true,
-  primary: true,
   darkText: true
 };
