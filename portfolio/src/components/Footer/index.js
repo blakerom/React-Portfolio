@@ -9,6 +9,7 @@ import {
   FooterLinkItems, 
   FooterLinkTitle, 
   FooterLink, 
+  FooterOuterLink, 
   Connect, 
   ConnectWrap, 
   ConnectLogo, 
@@ -26,13 +27,14 @@ const toggleHome = () => {
 
 const Footer = () => {
   return (
-    <FooterContainer>
+    <FooterContainer id="footer">
       <FooterWrap>
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>Info</FooterLinkTitle>
-              <FooterLink>About Us</FooterLink>
+              <FooterLink to="/"
+              >About Us</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Work</FooterLinkTitle>
@@ -43,7 +45,7 @@ const Footer = () => {
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>Send a Message</FooterLinkTitle>
-              <FooterLink to="contact">Contact</FooterLink>
+              <FooterOuterLink to="contact">Contact</FooterOuterLink>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Connect</FooterLinkTitle>
