@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
-  color: #F4EEED;
-  background: '#F4EEED';
+  color: #fff;
+  background: #F4EEED;
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -46,7 +46,6 @@ export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
-  width: 50%;
 `;
 
 export const TextWrapper = styled.div`
@@ -70,7 +69,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 400;
-  color: '#141414';
+  color: #141414;
 
   @media screen and (max-width: 768px) {
     font-size: 32px;
@@ -82,5 +81,10 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: '#010606';
+  color: #010606;
+`;
+
+export const HexWrap = styled.div`
+  width: 100%;
+  height: 100%;
 `;

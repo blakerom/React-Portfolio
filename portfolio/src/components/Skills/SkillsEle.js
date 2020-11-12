@@ -31,9 +31,7 @@ export const InfoRow = styled.div`
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
+    /* flex-direction: column; */
   }
 `;
 
@@ -50,7 +48,7 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-top: 60px;
+  /* padding-top: 60px; */
 `;
 
 export const TopLine = styled.p`
