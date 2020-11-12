@@ -1,5 +1,5 @@
 import image1 from '../../images/me.jpg';
-import image2 from '../../images/roadtrip.PNG';
+import image2 from '../../images/icons.PNG';
 
 
 export const homeObjOne = {
@@ -22,8 +22,8 @@ export const homeObjTwo = {
   lightText: true,
   lightTextDesc: true,
   topLine: 'Skills',
-  headLine: 'Project one headline',
-  description: 'Project one description goes here',
+  headLine: 'I Build With',
+  description: 'Technologies such as JavaScript and C#. I also love learning about other new technologies.',
   imgStart: true,
   img: image2,
   alt: 'Project 2',

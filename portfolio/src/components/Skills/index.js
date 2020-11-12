@@ -39,8 +39,8 @@ class Skills extends Component {
               <Column1>
               <TextWrapper>
                 <TopLine>Skills</TopLine>
-                <Heading>Headline</Heading> 
-                <Subtitle>Description</Subtitle>
+                <Heading>I Build With</Heading> 
+                <Subtitle>Technologies such as JavaScript and C#. I also love learning about other new technologies.</Subtitle>
               </TextWrapper>
               </Column1>
               <Column2>

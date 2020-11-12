@@ -23,8 +23,8 @@ const Home = () => {
       <Hero />
       <InfoSection {...homeObjOne}/>
       <Portfolio />
-      <Skills />
-      {/* <InfoSection {...homeObjTwo}/> */}
+      {/* <Skills /> */}
+      <InfoSection {...homeObjTwo}/>
       <ContactSection />
       <Footer />
     </>
