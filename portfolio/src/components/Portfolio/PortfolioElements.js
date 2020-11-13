@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const PortfolioContainer = styled.div`
-  height: 800px;
+  height: 950px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,11 +9,11 @@ export const PortfolioContainer = styled.div`
   background: #141414;
 
   @media screen and (max-width: 768px) {
-    height: 1100px;
+    height: 1600px;
   }
 
   @media screen and (max-width: 480px) {
-    height: 1300px;
+    height: 1600px;
   }
 `;
 
@@ -42,23 +42,37 @@ export const PortfolioCard = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 3px;
   max-height: 340px;
+  max-width: 340px;
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.1);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-  }
 `;
 
 export const PortfolioIcon = styled.img`
   height: 160px;
   width: 160px;
   margin-bottom: 10px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(2);
+    transition: all 0.2s ease-in-out;
+  }
+
+  @media screen and (max-width: 768px) {
+    &:hover {
+    transform: scale(1.6);
+    transition: all 0.2s ease-in-out;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    &:hover {
+    transform: scale(1.5);
+    transition: all 0.2s ease-in-out;
+    }
+  }
 `;
 
 export const PortfolioH1 = styled.h1`

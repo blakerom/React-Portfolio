@@ -68,6 +68,18 @@ export const FooterLink = styled(LinkScroll)`
   }
 `;
 
+export const FooterAltLink = styled.a`
+  color: #F4EEED;
+  text-decoration: none;
+  margin-bottom: .5rem;
+  font-size: 14px;
+
+  &:hover {
+    color: #ED4933;
+    transition: 0.3s ease-out;
+  }
+`;
+
 export const FooterOuterLink = styled(Link)`
   color: #F4EEED;
   text-decoration: none;
@@ -118,7 +130,7 @@ export const ConnectIcons = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 240px;
+  width: 100px;
 `;
 
 export const ConnectIconLink = styled.a`

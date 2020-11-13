@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Video from '../../videos/video1.mp4'
-import { Button } from '../ButtonElement'
+import { Button } from '../HeroButtonElement'
+import { FaArrowDown } from 'react-icons/fa';
 import { 
   HeroContainer, 
   HeroBg, 
@@ -23,20 +24,21 @@ const Hero = () => {
         <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Full Stack Software Developer</HeroH1>
+        <HeroH1>Hello there!</HeroH1>
         <HeroBtnWrapper>
           <Button 
-          to="contact" 
+          to="about" 
           onMouseEnter={onHover}
           onMouseLeave={onHover} 
-          primary='true' 
           dark='true'
           smooth={true}
           duration={500}
           spy={true}
           exact='true'
           offset={-80}
-          >Contact Me</Button>
+          >
+            <FaArrowDown />
+          </Button>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
