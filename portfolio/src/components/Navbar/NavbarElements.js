@@ -1,12 +1,13 @@
+// #ED4933 #242424 #F4EEED
 import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
 
 export const Nav = styled.nav`
-  background: #000;
+  background: ${({scrollNav}) => (scrollNav ? '#141414' : 'transparent')};
   height: 80px;
-  // margin-top: -80px;
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +75,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkScroll)`
-  color: #fff;
+  color: #F4EEED;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -85,4 +86,22 @@ export const NavLinks = styled(LinkScroll)`
   &.active {
     border-bottom: 3px solid #ED4933;
   }
+`;
+
+export const Logo = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+`;
+
+export const LogoFirst = styled.h1`
+  font-size: 30px;
+  text-transform: uppercase;
+`;
+
+export const LogoLast = styled.h3`
+  font-size: 22px;
+  text-transform: uppercase;
 `;
