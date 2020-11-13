@@ -54,7 +54,7 @@ export const Portfolio = () => {
           <PortfolioH2>Roadtrip</PortfolioH2>
           <PortfolioP>Trip planner that creates an itinerary for your destination.</PortfolioP>
           <Button
-          href="// team-get-road-trip.herokuapp.com/" 
+          href="//team-get-road-trip.herokuapp.com/" 
           target="_blank"
           onMouseEnter={onHover}
           onMouseLeave={onHover} 
@@ -66,7 +66,7 @@ export const Portfolio = () => {
           <PortfolioH2>Fishy Tracker</PortfolioH2>
           <PortfolioP>Aquarium water parameter tracking application w/ charts.</PortfolioP>
           <Button
-          href="//github.com/blakerom/fishy_tracker" 
+          href="//https://daviddicken.github.io/fishy_tracker/" 
           target="_blank"
           onMouseEnter={onHover}
           onMouseLeave={onHover} 

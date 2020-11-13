@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import image from '../../images/pnw.jpg'
 
 export const Container = styled.div`
 min-height: 692px;
@@ -82,6 +81,13 @@ export const FormLabel = styled.label`
 `;
 
 export const FormInput = styled.input`
+  padding: 16px 16px;
+  margin-bottom: 32px;
+  border: none;
+  border-radius: 4px;
+`;
+
+export const FormArea = styled.textarea`
   padding: 16px 16px;
   margin-bottom: 32px;
   border: none;

@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from '../../images/alone.jpg'
 import {
   Container,
   FormWrap,
@@ -9,31 +8,65 @@ import {
   FormH1,
   FormLabel,
   FormInput,
-  FormButton,
-  Text
+  FormArea, 
+  FormButton
 } from './ContactPageElements'
 
-const ContactPage = () => {
-  return (
-    <>
+class ContactPage extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    }
+  }
+
+  onNameChange(event) {
+    this.setState({name: event.target.value})
+  }
+
+  onEmailChange(event) {
+    this.setState({email: event.target.value})
+  }
+
+  onSubjectChange(event) {
+    this.setState({subject: event.target.value})
+  }
+
+  onMessageChange(event) {
+    this.setState({message: event.target.value})
+  }
+
+  render() {
+    return (
+      <>
       <Container>
         <FormWrap>
           <Icon to="/">Home</Icon>
           <FormContent>
-            <Form action="#">
+            <Form action="#" onSubmit={this.submitEmail.bind(this)} method="POST">
               <FormH1>Send me a message</FormH1>
+              <FormLabel  htmlFor='for'>Name</FormLabel>
+              <FormInput type='text' required value={this.state.name} onChange={this.onNameChange.bind(this)} />
               <FormLabel  htmlFor='for'>Email</FormLabel>
-              <FormInput type='email' required />
-              <FormLabel htmlFor='for'>Password</FormLabel>
-              <FormInput type='password' required />
-              <FormButton type='submit'>Continue</FormButton>
-              <Text>Forget</Text> 
+              <FormInput type='email' required value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+              <FormLabel  htmlFor='for'>Subject</FormLabel>
+              <FormInput type='text' value={this.state.subject} onChange={this.onSubjectChange.bind(this)} />
+              <FormLabel htmlFor='for'>Message</FormLabel>
+              <FormArea type='textarea' 
+              rows='5' 
+              required value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+              <FormButton type='submit'>Send</FormButton>
             </Form>
           </FormContent>
         </FormWrap>
       </Container>
-    </>
-  )
+      </>
+    );
+  }
 }
 
 export default ContactPage
