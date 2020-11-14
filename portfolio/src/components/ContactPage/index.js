@@ -13,7 +13,7 @@ import {
   FormArea, 
   FormButton,
   FormError
-} from './ContactPageEle'
+} from './ContactPageElement'
 
 const initialState = {
   name: '',

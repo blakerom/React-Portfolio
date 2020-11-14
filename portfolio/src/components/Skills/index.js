@@ -24,8 +24,8 @@ import {
   Subtitle,
   HexWrap
 } from './SkillsElements';
-import './Skills.css';
-import './Animations.css';
+// import './Skills.css';
+// import './Animations.css';
 
 class Skills extends Component {
   render() {
