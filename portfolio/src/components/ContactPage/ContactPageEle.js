@@ -5,28 +5,25 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 30px;
-  min-height: 692px;
-  position: relative;
-  z-index: 1;
   background-color: #242424;
 `;
 
 export const FormWrap = styled.div`
   height: 100%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   @media screen and (max-width: 400px) {
     height: 80%;
-    min-width: 400px;
+    min-width: 350px;
   }
 `;
 
 export const Icon = styled(Link)`
-  margin-left: 60px;
-  margin-top: 32px;
+  margin: 32px auto;
   text-decoration: none;
   color: #F4EEED;
   font-weight: 600;
@@ -36,19 +33,13 @@ export const Icon = styled(Link)`
     transition: all 0.2s ease-in-out;
     color: #ED4933;
   }
-  
-  @media screen and (max-width: 480px) {
-    margin-left: 40px;
-    margin-top: 8px;
-  }
 `;
 
 export const FormContent = styled.div`
-  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 30px;
 
   @media screen and (max-width: 480px) {
     padding: 10px;
@@ -57,8 +48,8 @@ export const FormContent = styled.div`
 
 export const Form = styled.form`
   background: #141414;
-  max-width: 400px;
-  height: auto;
+  max-width: 600px;
+  min-width: 300px;
   width: 100%;
   z-index: 1;
   display: grid;
