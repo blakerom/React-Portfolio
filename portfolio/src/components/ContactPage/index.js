@@ -1,7 +1,6 @@
 // Thanks to the following article for helping solve sending emails without a backend by utilizing emailjs. https://medium.com/weekly-webtips/simple-react-contact-form-without-back-end-9fa06eff52d9 //
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
-import './ContactPage.css'
 import {
   Container,
   FormWrap,
