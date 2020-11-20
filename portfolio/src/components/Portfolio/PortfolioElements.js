@@ -18,7 +18,7 @@ export const PortfolioContainer = styled.div`
 `;
 
 export const PortfolioWrapper = styled.div`
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -86,12 +86,12 @@ export const PortfolioH1 = styled.h1`
 `;
 
 export const PortfolioH2 = styled.h2`
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-bottom: 10px;
   color: #ED4933;
 `;
 
 export const PortfolioP = styled.p`
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
 `;

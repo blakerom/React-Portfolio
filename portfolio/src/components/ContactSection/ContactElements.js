@@ -48,7 +48,7 @@ export const ImageBg = styled.img`
 
 export const ContactContent = styled.div`
   z-index: 3;
-  max-width: 1200px;
+  max-width: 1400px;
   position: absolute;
   padding: 8px 24px;
   display: flex;
@@ -58,11 +58,11 @@ export const ContactContent = styled.div`
 
 export const ContactH1 = styled.h1`
   color: #F4EEED;
-  font-size: 48px;
+  font-size: 68px;
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   @media screen and (max-width: 480px) {
