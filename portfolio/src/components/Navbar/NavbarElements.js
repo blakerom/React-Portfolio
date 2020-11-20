@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.4rem;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -28,7 +28,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
+  max-width: 1400px;
 `;
 
 export const NavLogo = styled(LinkRouter)`
@@ -93,15 +93,15 @@ export const Logo = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 20px;
+  line-height: 26px;
 `;
 
 export const LogoFirst = styled.h1`
-  font-size: 30px;
+  font-size: 38px;
   text-transform: uppercase;
 `;
 
 export const LogoLast = styled.h3`
-  font-size: 22px;
+  font-size: 28px;
   text-transform: uppercase;
 `;
