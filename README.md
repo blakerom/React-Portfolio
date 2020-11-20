@@ -1,4 +1,4 @@
-# React-Portolio
+# React-Portfolio
 
 Created using create-react-app.
 
